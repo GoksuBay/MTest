@@ -7,8 +7,8 @@ url 	= https://www.gnu.org/software/emacs/emacs.html
 [kaynak]
 1		= https://ftp.gnu.org/gnu/emacs/$isim-$surum.tar.xz
 
-[sha256]
-1		= ef5f2556e4be3dd6f82c1299fcc324504cab0f8afc087c99edccb2585cb337db
+[sha512]
+1		= c223ff5c51ca8bdf887bacb2dc37b08a637d39ed6f887cc24f67397e46fe5fdb68f33f21b97300b985c749f32aa09080d33103271637ed4ce5d9f2ea34ce9fe1
 
 [gerek]
 derleme = gnutls
