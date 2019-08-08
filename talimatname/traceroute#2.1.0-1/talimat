@@ -1,0 +1,17 @@
+[paket]
+tanim 	= IP ağından alınan paketleri izlemeye yarayan program.
+paketci = GoksuBay
+grup 	= sistem
+url 	= http://traceroute.sourceforge.net/
+
+[gerek]
+derleme = glibc
+calisma =
+
+[kaynak]
+1		= https://downloads.sourceforge.net/${isim}/${isim}-${surum}.tar.gz
+
+[derle]
+betik 	= echo "derleme yok, kurulum aşamasına geçildi."
+[pakur]
+betik 	= make prefix=/usr DESTDIR="${pkgdir}" install
