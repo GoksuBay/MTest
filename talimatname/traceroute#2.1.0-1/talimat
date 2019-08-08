@@ -12,8 +12,6 @@ calisma =
 1		= https://downloads.sourceforge.net/${isim}/${isim}-${surum}.tar.gz
 
 [derle]
-betik 	= cd ${isim}-${surum}
 betik 	= make CFLAGS="$CFLAGS" CPPFLAGS="$CPPFLAGS" LDFLAGS="$LDFLAGS"
 [pakur]
-betik 	= cd ${isim}-${surum}
 betik 	= make prefix=/usr DESTDIR="${pkgdir}" install
