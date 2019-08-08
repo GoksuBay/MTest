@@ -7,7 +7,7 @@ cd httpd-${surum}
   cat "${SRC}/milis.layout" >> config.layout
   patch -Np1 -i ../openssl-malloc-init.patch
   ./configure --sbindir=/usr/bin \
-      --enable-layout=milis \
+      --enable-layout=Milis \
       --enable-mpms-shared=all \
       --enable-modules=all \
       --enable-mods-shared=all \
