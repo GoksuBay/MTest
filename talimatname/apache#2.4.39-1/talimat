@@ -1,0 +1,25 @@
+[paket]
+tanim 	= Yüksek performanslı UNIX tabanlı HTTP sunucusu
+paketci = GoksuBay
+grup 	= sistem
+url 	= https://www.apache.org/dist/httpd
+
+[gerek]
+derleme = libxml2 lua curl jansson
+calisma =
+
+[kaynak]
+1		= $url/httpd-$surum.tar.bz2
+dosya	= openssl-malloc-init.patch
+dosya 	= apache.tmpfiles.conf
+dosya 	= httpd.logrotate
+dosya 	= httpd.service
+dosya 	= milis.layout
+
+[sha256]
+1 		= b4ca9d05773aa59b54d66cd8f4744b945289f084d3be17d7981d1783a5decfa2
+
+[derle]
+dosya 	= derle.sh
+[pakur]
+dosya 	= pakur.sh
