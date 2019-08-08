@@ -1,0 +1,13 @@
+[paket]
+tanim 	= Uzatılabilir, kişiselleştirilebilir, gerçek zamanlı editor.
+paketci = GoksuBay
+grup 	= sistem
+url 	= https://www.gnu.org/software/emacs/emacs.html
+
+[kaynak]
+1		= https://ftp.gnu.org/gnu/emacs/$isim-$surum.tar.xz
+
+[derle]
+dosya 	= derle.sh
+[pakur]
+dosya  	= pakur.sh
