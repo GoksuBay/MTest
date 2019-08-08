@@ -1,0 +1,16 @@
+[paket]
+tanim 	= Zamanuyumsuz girdi çıktı kütüphanesi.
+paketci = GoksuBay
+grup 	= kütüphane
+url 	= http://lse.sourceforge.net/io/aio.html
+
+[kaynak]
+1		= http://ftp.debian.org/debian/pool/main/liba/$isim/${isim}_${surum}.orig.tar.gz
+
+[sha256]
+1= e019028e631725729376250e32b473012f7cb68e1f7275bfc1bbcdd0f8745f7e
+
+[derle]
+betik 	= echo "derleme yok kuruluma geçildi!"
+[pakur]
+dosya  	= pakur.sh
