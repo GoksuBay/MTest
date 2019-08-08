@@ -12,6 +12,6 @@ calisma =
 1		= https://downloads.sourceforge.net/${isim}/${isim}-${surum}.tar.gz
 
 [derle]
-betik 	= echo "derleme yok, kurulum aşamasına geçildi."
+betik 	= make CFLAGS="$CFLAGS" CPPFLAGS="$CPPFLAGS" LDFLAGS="$LDFLAGS"
 [pakur]
 betik 	= make prefix=/usr DESTDIR="${pkgdir}" install
