@@ -7,6 +7,9 @@ url 	= https://github.com/tmux/tmux/wiki
 [kaynak]
 1		= https://github.com/tmux/tmux/releases/download/${surum}/tmux-${surum}.tar.gz
 
+[gerek]
+derleme = libevent
+
 [derle]
 betik 	= ./configure --prefix=/usr --enable-utempter
 betik 	= make
