@@ -11,8 +11,7 @@ url 	= https://github.com/rfc1036/whois
 1		= 64ec63339d7ad559cd6722bd3141a1e5787817bd921841a813ee17a0a34b6f3d
 
 [gerek]
-derleme = perl
-calisma = libidn2
+derleme = perl libidn2
 
 [derle]
 betik 	= make
