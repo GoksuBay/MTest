@@ -1,0 +1,24 @@
+[paket]
+tanim 	= Uzatılabilir, kişiselleştirilebilir, gerçek zamanlı editor.
+paketci = GoksuBay
+grup 	= sistem
+url 	= https://github.com/rfc1036/whois
+
+[kaynak]
+1		= http://ftp.debian.org/debian/pool/main/w/whois/${isim}_${surum}.tar.xz
+
+[sha256]
+1		= 64ec63339d7ad559cd6722bd3141a1e5787817bd921841a813ee17a0a34b6f3d
+
+[gerek]
+derleme = perl
+calisma = libidn2
+
+[derle]
+betik 	= make
+betik 	= CONFIG_FILE = /etc/whois.conf
+betik 	= CFLAGS = "$CFLAGS $CPPFLAGS
+betik 	= HAVE_ICONV = 1
+[pakur]
+betik 	= make prefix=/usr BASEDIR = "{$PKG}" install-whois
+betik 	= install -D m644 whois.conf "$PKG"/etc/whois.conf
