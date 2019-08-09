@@ -1,0 +1,25 @@
+[paket]
+tanim 	= Olay bildirim kütüphanesi
+paketci = GoksuBay
+grup 	= kütüphane
+url 	= https://libevent.org/
+
+[kaynak]
+1		= https://github.com/libevent/libevent/releases/download/release-$surum-stable/$isim-$surum-stable.tar.gz
+
+[gerek]
+derleme = python2 openssl
+
+[sha256]
+1 		= a65bac6202ea8c5609fd5c7e480e6d25de467ea1917c08290c521752f147283d
+
+[derle]
+betik 	= cd ${isim}-${surum}-stable
+betik 	= ./autogen.sh
+betik 	= ./configure --prefix=/usr --sysconfdir=/etc --disable-libevent-regress
+betik 	= make
+
+[pakur]
+beitk 	= cd ${isim}-${surum}-stable
+tip 	= gnu
+betik 	= install -Dm 644 LICENSE "${PKG}"/usr/share/licenses/libevent/LICENSE
