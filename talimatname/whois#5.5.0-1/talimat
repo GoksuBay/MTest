@@ -12,7 +12,6 @@ url 	= https://github.com/rfc1036/whois
 
 [gerek]
 derleme = perl
-calisma = libidn2
 
 [derle]
 betik 	= cd "${SRC}/${isim}-5.4.4"
