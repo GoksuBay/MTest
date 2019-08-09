@@ -7,6 +7,9 @@ url 	= https://github.com/tmux/tmux/wiki
 [kaynak]
 1		= https://github.com/tmux/tmux/releases/download/${surum}/tmux-${surum}.tar.gz
 
+[sha256]
+1		= cd7ca218dcb49358b748c46335f909c4e9cc1f7a2efaf7c6ec1f1ab6ffdea1a77
+
 [gerek]
 derleme = libevent ncurses libutempter
 

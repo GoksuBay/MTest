@@ -1,0 +1,15 @@
+libevent-2.1.so.7.0.0
+libevent_core-2.1.so.7.0.0
+libevent_extra-2.1.so.7.0.0
+libevent_pthreads-2.1.so.7.0.0
+libevent_openssl-2.1.so.7.0.0
+libevent_openssl.so
+libevent_openssl-2.1.so.7
+libevent_pthreads.so
+libevent_pthreads-2.1.so.7
+libevent_extra.so
+libevent_extra-2.1.so.7
+libevent_core.so
+libevent_core-2.1.so.7
+libevent.so
+libevent-2.1.so.7
