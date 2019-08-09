@@ -6,10 +6,11 @@ url 	= https://github.com/tmux/tmux/wiki
 
 [kaynak]
 1		= https://github.com/tmux/tmux/releases/download/${surum}/tmux-${surum}.tar.gz
-dosya 	= fix-sizing.patch
+
+[sha256]
+1		= 839d167a4517a6bffa6b6074e89a9a8630547b2dea2086f1fad15af12ab23b25
 
 [derle]
-yama 	= 2
 betik 	= ./configure --prefix=/usr --enable-utempter
 betik 	= make
 
