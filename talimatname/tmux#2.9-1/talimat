@@ -8,7 +8,7 @@ url 	= https://github.com/tmux/tmux/wiki
 1		= https://github.com/tmux/tmux/releases/download/${surum}/tmux-${surum}.tar.gz
 
 [gerek]
-derleme = libevent
+derleme = libevent ncurses libutempter
 
 [derle]
 betik 	= ./configure --prefix=/usr --enable-utempter
