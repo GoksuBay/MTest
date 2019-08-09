@@ -14,10 +14,7 @@ url 	= https://github.com/rfc1036/whois
 derleme = perl
 
 [derle]
-betik 	= make
-betik 	= CONFIG_FILE=/etc/whois.conf
-betik 	= CFLAGS="$CFLAGS $CPPFLAGS"
-betik 	= HAVE_ICONV=1
+betik 	= make CONFIG_FILE=/etc/whois.conf CFLAGS="$CFLAGS $CPPFLAGS" HAVE_ICONV=1
 [pakur]
 betik 	= make prefix=/usr BASEDIR="${PKG}" install-whois
 betik 	= install -D -m644 whois.conf "${PKG}/etc/whois.conf"
