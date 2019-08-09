@@ -2,7 +2,7 @@
 tanim 	= Olay bildirim kütüphanesi
 paketci = GoksuBay
 grup 	= kütüphane
-url 	= ftp://ftp.altlinux.org/pub/people/ldv/utempter"
+url 	= ftp://ftp.altlinux.org/pub/people/ldv/utempter
 
 [kaynak]
 1		= $url/$isim-$surum.tar.bz2
