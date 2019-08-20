@@ -10,6 +10,7 @@ dosya 	= reiserfsprogs-3.6.27-loff_t.patch
 
 [derle]
 yama 	= 2
+betik 	= autoreconf -i
 betik 	= CFLAGS+=' -fgnu89-inline'
 betik 	= ./configure --prefix=/usr --sbindir=/usr/bin
 betik 	= make
