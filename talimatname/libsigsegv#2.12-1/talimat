@@ -7,6 +7,9 @@ url 	= https://www.gnu.org/software/libsigsegv/
 [kaynak]
 1		= https://ftp.gnu.org/gnu/$isim/$isim-$surum.tar.gz
 
+[sha256]
+1 		= 3ae1af359eebaa4ffc5896a1aee3568c052c99879316a1ab57f8fe1789c390b6	 
+
 [derle]
 betik 	= ./configure --prefix=/usr --enable-shared
 betik 	= make
