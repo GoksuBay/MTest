@@ -17,3 +17,7 @@ derleme = ffcall libsigsegv
 dosya 	= derle.sh
 [pakur]
 betik 	= make -j1 DESTDIR="$pkgdir" install
+betik 	= cd src
+betik 	= vi config.lisp
+betik 	= make
+betik 	= make check
