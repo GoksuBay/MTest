@@ -1,0 +1,16 @@
+[paket]
+tanim 	= ANSI Common Lisp için yorumlayıcı, derleyici ve hata ayıklayıcı.
+paketci = GoksuBay
+grup 	= sistem
+url 	= https://clisp.sourceforge.io
+
+[kaynak]
+1		= https://downloads.sourceforge.net/sourceforge/$isim/$isim-$surum.tar.bz2
+
+[sha512]
+1		= eef66fc85199a2c283b616db61bf67ff103eeb0f19fa907da48994dc790b6f5f8d0c74fb3bd723c6b827c0ff3cfd89fa6ba67934fc669ed5d5249044b5140d81
+
+[derle]
+dosya 	= derle.sh
+[pakur]
+betik 	= make -j1 DESTDIR="$pkgdir" install
