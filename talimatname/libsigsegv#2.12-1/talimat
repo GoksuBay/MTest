@@ -5,9 +5,7 @@ grup 	= kütüphane
 url 	= https://www.gnu.org/software/libsigsegv/
 
 [kaynak]
-1		= https://ftp.gnu.org/gnu/$isim/$isim-$surum.tar.gz"
-
-
+1		= https://ftp.gnu.org/gnu/$isim/$isim-$surum.tar.gz
 
 [derle]
 betik 	= ./configure --prefix=/usr --enable-shared
