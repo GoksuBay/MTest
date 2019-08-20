@@ -8,7 +8,6 @@ url 	= https://www.gnu.org/software/libsigsegv/
 1		= https://ftp.gnu.org/gnu/$isim/$isim-$surum.tar.gz
 
 [derle]
-betik 	= ./configure --prefix=/usr --enable-shared
-betik 	= make
+betik 	= echo "DERLEME YOK KURULUMA GEÇİLDİ"
 [pakur]
 tip 	= gnu
