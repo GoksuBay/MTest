@@ -1,4 +1,3 @@
-cd $isim
   ./configure --prefix=/usr --with-readline --with-ffcall src
 
   cd src
