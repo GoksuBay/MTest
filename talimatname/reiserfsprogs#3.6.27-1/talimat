@@ -6,7 +6,7 @@ url 	= https://www.kernel.org
 
 [kaynak]
 1		= $url/pub/linux/kernel/people/jeffm/reiserfsprogs/v${surum}/${isim}-${surum}.tar.xz
-2 		= reiserfsprogs-3.6.27-loff_t.patch
+dosya 	= reiserfsprogs-3.6.27-loff_t.patch
 
 [derle]
 yama 	= 2
