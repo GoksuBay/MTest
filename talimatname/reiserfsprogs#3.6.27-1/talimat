@@ -5,7 +5,7 @@ grup 	= sistem
 url 	= https://www.kernel.org
 
 [kaynak]
-1		= $url/pub/linux/kernel/people/jeffm/reiserfsprogs/v${pkgver}/${pkgname}-${pkgver}.tar.xz
+1		= $url/pub/linux/kernel/people/jeffm/reiserfsprogs/v${surum}/${isim}-${surum}.tar.xz
 2 		= reiserfsprogs-3.6.27-loff_t.patch
 
 [derle]
