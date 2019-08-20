@@ -1,0 +1,21 @@
+[paket]
+tanim 	= Gömülü yorumlayıcıların, yabancı fonksiyonları çağırabilmesi için gerekli C kütüphanesi
+paketci = GoksuBay
+grup 	= kütüphane
+url 	= https://www.gnu.org/software/libffcall/
+
+[kaynak]
+1		= https://ftp.gnu.org/gnu/libffcall/libffcall-$surum.tar.gz
+
+[sha256]
+1		= a091fb8bbabf17c94a2dae2d41161b96a08ab92b5f75d3364157a2c34d538c47
+
+[derle]
+betik 	= cd "$SRC/lib$isim-$surum"
+betik 	= [ "$CARCH" = "x86_64" ] && CONFIGFLAG="--with-pic"
+betik 	= ./configure --prefix=/usr --mandir=/usr/share/man $CONFIGFLAG
+betik 	= make
+[pakur]
+betik 	= cd "$SRC/lib$isim-$surum"
+betik 	= install -d "$PKG"/usr/share/{man,doc/ffcall}
+betik 	= make DESTDIR = "$PKG" htmldir=/usr/share/doc/ffcall install

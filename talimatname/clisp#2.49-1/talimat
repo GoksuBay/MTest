@@ -10,6 +10,9 @@ url 	= https://clisp.sourceforge.io
 [sha512]
 1		= eef66fc85199a2c283b616db61bf67ff103eeb0f19fa907da48994dc790b6f5f8d0c74fb3bd723c6b827c0ff3cfd89fa6ba67934fc669ed5d5249044b5140d81
 
+[gerek]
+derleme = ffcall
+
 [derle]
 dosya 	= derle.sh
 [pakur]
