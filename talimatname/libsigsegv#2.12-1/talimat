@@ -10,6 +10,7 @@ url 	= https://www.gnu.org/software/libsigsegv/
 
 
 [derle]
-betik 	= echo "DERLEME YOK KURULUMA GEÇİLDİ"
+betik 	= ./configure --prefix=/usr --enable-shared
+betik 	= make
 [pakur]
 tip 	= gnu
