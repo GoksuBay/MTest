@@ -18,4 +18,4 @@ betik 	= make
 [pakur]
 betik 	= cd "$SRC/lib$isim-$surum"
 betik 	= install -d "$PKG"/usr/share/{man,doc/ffcall}
-betik 	= make DESTDIR = "$PKG" htmldir=/usr/share/doc/ffcall install
+betik 	= make DESTDIR="$PKG" htmldir=/usr/share/doc/ffcall install
