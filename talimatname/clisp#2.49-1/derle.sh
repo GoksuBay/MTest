@@ -1,16 +1,6 @@
-ulimit -s 16384
+cd $isim
+  ./configure --prefix=/usr --with-readline --with-ffcall src
 
-	./configure \
-		--prefix=/usr \
-		--with-ffcall \
-		--with-dynamic-ffi \
-		--without-dynamic-modules \
-		--disable-mmap \
-		--mandir=/usr/share/man \
-		--infodir=/usr/share/info \
-		"$BUILD"
-	cd src
-	vi config.lisp
-	make
-	make check
-	make -j1
+  cd src
+  ./makemake --prefix=/usr --with-readline --with-ffcall --with-dynamic-ffi > Makefile
+  make
