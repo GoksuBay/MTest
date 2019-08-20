@@ -11,7 +11,7 @@ url 	= http://www.sbcl.org
 1		= d2a7901144d227a7194661dc3ccee28873c8d5cbbd167013660c78b9ad63640c
 
 [gerek]
-derleme = zlib
+derleme = zlib clisp
 
 [derle]
 dosya 	= derle.sh

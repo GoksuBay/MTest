@@ -1,0 +1,17 @@
+[paket]
+tanim 	= Reiserfs gerekleri
+paketci = GoksuBay
+grup 	= sistem
+url 	= https://www.kernel.org
+
+[kaynak]
+1		= $url/pub/linux/kernel/people/jeffm/reiserfsprogs/v${pkgver}/${pkgname}-${pkgver}.tar.xz
+2 		= reiserfsprogs-3.6.27-loff_t.patch
+
+[derle]
+yama 	= 2
+betik 	= CFLAGS+=' -fgnu89-inline'
+betik 	= ./configure --prefix=/usr --sbindir=/usr/bin
+betik 	= make
+[pakur]
+tip 	= gnu
