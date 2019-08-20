@@ -12,5 +12,5 @@ ulimit -s 16384
 	cd src
 	vi config.lisp
 	make
-	make -j1
+	make check
 	make -j1
