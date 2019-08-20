@@ -6,13 +6,11 @@ url 	= http://pagesperso-orange.fr/sebastien.godard
 
 [kaynak]
 1		= $url/$isim-$surum.tar.xz
-dosya		= includes.patch
 
 [sha512]
 1		= b54af1724777e20df54e9dac97b558abd4f669724234d4a62debbfa2dd5788020683ca8e47f95ea018feefd024abe2f930a91363b35ef490ddf69b7cf2d5df68
 
 [derle]
 dosya 	= derle.sh
-yama 	= 2
 [pakur]
 tip		= gnu
