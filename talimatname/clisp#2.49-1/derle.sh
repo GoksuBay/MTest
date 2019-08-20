@@ -9,4 +9,8 @@ ulimit -s 16384
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
 		"$builddir"
+	cd src
+	vi config.lisp
+	make
+	make -j1
 	make -j1
