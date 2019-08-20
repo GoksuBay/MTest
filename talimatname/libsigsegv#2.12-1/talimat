@@ -1,0 +1,15 @@
+[paket]
+tanim 	= Sayfa hatası tespiti kütüphanesi
+paketci = GoksuBay
+grup 	= kütüphane
+url 	= https://www.gnu.org/software/libsigsegv/
+
+[kaynak]
+1		= https://ftp.gnu.org/gnu/$isim/$isim-$surum.tar.gz"
+
+
+
+[derle]
+betik 	= echo "DERLEME YOK KURULUMA GEÇİLDİ"
+[pakur]
+tip 	= gnu
