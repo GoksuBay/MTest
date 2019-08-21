@@ -16,4 +16,4 @@ derleme = ffcall libsigsegv
 [derle]
 dosya 	= derle.sh
 [pakur]
-tip 	= gnu
+betik 	= cd /tmp/work/src/$isim-$surum/src
