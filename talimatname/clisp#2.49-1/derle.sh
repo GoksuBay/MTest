@@ -9,4 +9,5 @@ ulimit -s 16384
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
 		"$SRC"
+	cd /tmp/work/src
 	make -j1
