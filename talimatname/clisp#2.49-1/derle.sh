@@ -9,4 +9,4 @@ ulimit -s 16384
 		--infodir=/usr/share/info \
 		"$SRC"
 	cd /tmp/work/src
-	make -j1
+	make
