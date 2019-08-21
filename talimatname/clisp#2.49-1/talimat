@@ -16,5 +16,4 @@ derleme = ffcall libsigsegv
 [derle]
 dosya 	= derle.sh
 [pakur]
-betik 	= cd $PKG
 tip 	= gnu
