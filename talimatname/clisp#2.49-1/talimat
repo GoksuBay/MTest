@@ -16,5 +16,5 @@ derleme = ffcall libsigsegv
 [derle]
 dosya 	= derle.sh
 [pakur]
-betik 	= cd $isim/src
+betik 	= cd /tmp/work/src
 betik 	= make -j1 DESTDIR="$PKG" install
