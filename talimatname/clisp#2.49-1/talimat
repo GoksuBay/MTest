@@ -16,5 +16,4 @@ derleme = ffcall libsigsegv
 [derle]
 dosya 	= derle.sh
 [pakur]
-betik 	= cd /tmp/work/src
-betik 	= make -j1 DESTDIR="$PKG" install
+tip 	= gnu
