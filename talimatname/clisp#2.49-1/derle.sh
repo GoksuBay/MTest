@@ -1,3 +1,6 @@
-ulimit -s 16384
-./configure --prefix=/usr --with-ffcall --with-dynamic-ffi --without-dynamic-modules --disable-mmap --mandir=/usr/share/man --infodir=/usr/share/info "$SRC"
-	make -j1
+cd $isim
+  ./configure --prefix=/usr --with-readline --with-ffcall src
+
+  cd src
+  ./makemake --prefix=/usr --with-readline --with-ffcall --with-dynamic-ffi > Makefile
+  make
