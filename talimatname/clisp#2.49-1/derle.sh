@@ -1,5 +1,4 @@
 ulimit -s 16384
-cd /tmp/work/src
 	./configure \
 		--prefix=/usr \
 		--with-ffcall \
@@ -9,4 +8,5 @@ cd /tmp/work/src
 		--mandir=/usr/share/man \
 		--infodir=/usr/share/info \
 		"$SRC"
+	cd /tmp/work/src
 	make -j1
