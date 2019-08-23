@@ -16,4 +16,5 @@ derleme = ffcall libsigsegv
 [derle]
 dosya 	= derle.sh
 [pakur]
+betik 	= mv Makefile.devel Makefile
 tip 	= gnu
