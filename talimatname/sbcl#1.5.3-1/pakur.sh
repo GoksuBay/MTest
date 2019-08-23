@@ -3,7 +3,7 @@ cd "$SRC/$isim-$surum"
   # cannot have both SBCL_HOME and INSTALL_ROOT
   SBCL_HOME="" INSTALL_ROOT="$PKG/usr" sh install.sh
 
-  src/runtime/sbcl --core output/sbcl.core --script "${SRC}/arch-fixes.lisp"
+  src/runtime/sbcl --core output/sbcl.core --script "${SRC}/fixes.lisp"
   mv sbcl-new.core "${PKG}/usr/lib/sbcl/sbcl.core"
 
   # sources

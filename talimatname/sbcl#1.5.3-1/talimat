@@ -6,6 +6,7 @@ url 	= http://www.sbcl.org
 
 [kaynak]
 1		= https://downloads.sourceforge.net/project/sbcl/sbcl/$surum/$isim-$surum-source.tar.bz2
+dosya 	= fixes.lisp
 
 [sha256]
 1		= d2a7901144d227a7194661dc3ccee28873c8d5cbbd167013660c78b9ad63640c
