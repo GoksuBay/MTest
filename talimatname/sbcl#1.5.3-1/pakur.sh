@@ -1,9 +1,22 @@
-INSTALL_ROOT="$PKG/usr" \
-		LIB_DIR="/usr/lib" \
-		DOC_DIR="$PKG/usr/share/doc/$isim" \
-		sh install.sh
+cd "$SRC/$isim-$surum"
 
-	paxmark -rm "$PKG"/usr/bin/sbcl
+  # cannot have both SBCL_HOME and INSTALL_ROOT
+  SBCL_HOME="" INSTALL_ROOT="$PKG/usr" sh install.sh
 
-	rmdir "$PKG"/usr/share/doc/sbcl/html \
-		"$PKG"/usr/share/info 2>/dev/null || true
+  src/runtime/sbcl --core output/sbcl.core --script "${SRC}/arch-fixes.lisp"
+  mv sbcl-new.core "${PKG}/usr/lib/sbcl/sbcl.core"
+
+  # sources
+  mkdir -p "$PKG/usr/share/sbcl-source"
+  cp -R -t "$PKG/usr/share/sbcl-source" "$SRC/$isim-$surum/"{src,contrib}
+
+  # license
+  install -D -m644 "$SRC/$isim-$surum/COPYING" \
+                   "$PKG/usr/share/licenses/$isim/license.txt"
+
+  # drop unwanted files
+  find "$PKG" \( -name Makefile -o -name .cvsignore \) -delete
+  find "$PKG/usr/share/sbcl-source" -type f \
+    \( -name \*.fasl -o -name \*.o -o -name \*.log -o -name \*.so -o -name a.out \) -delete
+
+  rm "$PKG/usr/share/sbcl-source/src/runtime/sbcl"{,.nm}
